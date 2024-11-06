@@ -1,0 +1,35 @@
+2024-08-25T19:53:41.793-06:00  INFO 36429 --- [Hotel] [main] c.c.s.h.reservations.HotelApplication    : Starting HotelApplication using Java 17.0.8 with PID 36429 (/Users/josesaidolanogarcia/REPOSITORIOS/Hotel/target/classes started by josesaidolanogarcia in /Users/josesaidolanogarcia/REPOSITORIOS/Hotel)
+2024-08-25T19:53:41.934-06:00  INFO 36429 --- [Hotel] [main] c.c.s.h.reservations.HotelApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-08-25T19:53:43.293-06:00  INFO 36429 --- [Hotel] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-25T19:53:43.344-06:00  INFO 36429 --- [Hotel] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interface.
+2024-08-25T19:53:44.060-06:00  INFO 36429 --- [Hotel] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-25T19:53:44.076-06:00  INFO 36429 --- [Hotel] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-25T19:53:44.076-06:00  INFO 36429 --- [Hotel] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-08-25T19:53:44.166-06:00  INFO 36429 --- [Hotel] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-25T19:53:44.166-06:00  INFO 36429 --- [Hotel] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2039 ms
+2024-08-25T19:53:44.428-06:00  INFO 36429 --- [Hotel] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-25T19:53:44.436-06:00  WARN 36429 --- [Hotel] [main] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=org.hsqldb.jdbcDriver was not found, trying direct instantiation.
+2024-08-25T19:53:44.762-06:00  INFO 36429 --- [Hotel] [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2024-08-25T19:53:44.769-06:00  INFO 36429 --- [Hotel] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@4ef4f627
+2024-08-25T19:53:44.771-06:00  INFO 36429 --- [Hotel] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-25T19:53:45.030-06:00  INFO 36429 --- [Hotel] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-25T19:53:45.152-06:00  INFO 36429 --- [Hotel] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-08-25T19:53:45.201-06:00  INFO 36429 --- [Hotel] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-25T19:53:45.553-06:00  INFO 36429 --- [Hotel] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-25T19:53:46.630-06:00  INFO 36429 --- [Hotel] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-25T19:53:46.653-06:00  INFO 36429 --- [Hotel] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-25T19:53:47.115-06:00  WARN 36429 --- [Hotel] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-25T19:53:48.961-06:00  INFO 36429 --- [Hotel] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-08-25T19:53:48.977-06:00  INFO 36429 --- [Hotel] [main] c.c.s.h.reservations.HotelApplication    : Started HotelApplication in 8.247 seconds (process running for 8.8)
+2024-08-25T19:53:48.980-06:00  INFO 36429 --- [Hotel] [main] c.c.s.h.r.c.ReservationGenerator         : BEGIN initial sample reservations...
+2024-08-25T19:53:49.060-06:00  INFO 36429 --- [Hotel] [main] c.c.s.h.r.c.ReservationGenerator         : reservationCreatedAtDB: Reservation(id=1, clientFullName=Jose Said Olano Garcia, roomNumber=100, reservationDates=[2024-08-25, 2024-08-26, 2024-08-27, 2024-08-28])
+2024-08-25T19:53:49.062-06:00  INFO 36429 --- [Hotel] [main] c.c.s.h.r.c.ReservationGenerator         : reservationCreatedAtDB: Reservation(id=2, clientFullName=John Smith, roomNumber=101, reservationDates=[2024-08-25, 2024-09-26, 2024-09-27, 2024-09-28])
+2024-08-25T19:53:49.064-06:00  INFO 36429 --- [Hotel] [main] c.c.s.h.r.c.ReservationGenerator         : reservationCreatedAtDB: Reservation(id=3, clientFullName=Clark Kent, roomNumber=102, reservationDates=[2024-08-25, 2024-08-29, 2025-03-30, 2026-03-31])
+2024-08-25T19:53:49.064-06:00  INFO 36429 --- [Hotel] [main] c.c.s.h.r.c.ReservationGenerator         : END initial sample reservations...
+2024-08-25T19:54:17.150-06:00  INFO 36429 --- [Hotel] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-25T19:54:17.151-06:00  INFO 36429 --- [Hotel] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-25T19:54:17.152-06:00  INFO 36429 --- [Hotel] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-25T21:05:40.483-06:00  WARN 36429 --- [Hotel] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=33m55s389ms).
+2024-08-25T22:07:12.340-06:00  INFO 36429 --- [Hotel] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-25T22:07:12.353-06:00  INFO 36429 --- [Hotel] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-25T22:07:12.357-06:00  INFO 36429 --- [Hotel] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
