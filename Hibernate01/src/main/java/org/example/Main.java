@@ -45,8 +45,10 @@ public class Main {
 
             insertUser( user );
 
+            System.out.println();
+
             user = getUser( user.getId() );
-            System.out.println( user.toString() );
+            System.out.println("Recovering user: " + user.toString() );
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -99,6 +101,7 @@ public class Main {
                 conn.close();
             }
         }
+        System.out.println("User Inserted: " + user);
     }
 
     /**
