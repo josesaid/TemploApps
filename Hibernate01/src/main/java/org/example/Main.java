@@ -48,7 +48,12 @@ public class Main {
             System.out.println();
 
             user = getUser( user.getId() );
-            System.out.println("Recovering user: " + user.toString() );
+            //user = getUser( 5 );
+            if(user.getName() ==null){
+                System.out.println("El usuario no fue encontrado en la BD");
+            }else {
+                System.out.println("Recovering user: " + user.toString());
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -180,45 +185,47 @@ public class Main {
             stmt = conn.prepareStatement( "SELECT id, name, email, phone FROM users WHERE id=?" );
             stmt.setInt( 1, id );
             rs = stmt.executeQuery();
-            rs.next();
+            boolean resultado = rs.next();
+            if(resultado){
+                User user = new User();
+                user.setId( rs.getInt( 1 ) );
+                user.setName( rs.getString( 2 ) );
+                user.setEmail( rs.getString( 3 ) );
+                user.setPhone( rs.getString( 4 ) );
 
-            User user = new User();
-            user.setId( rs.getInt( 1 ) );
-            user.setName( rs.getString( 2 ) );
-            user.setEmail( rs.getString( 3 ) );
-            user.setPhone( rs.getString( 4 ) );
+                rs.close();
+                stmt.close();
 
-            rs.close();
-            stmt.close();
+                user.setTools( new ArrayList<Tool>() );
+                user.setSkills( new ArrayList<Skill>() );
 
-            user.setTools( new ArrayList<Tool>() );
-            user.setSkills( new ArrayList<Skill>() );
+                stmt = conn.prepareStatement( "SELECT tools.id, tools.name FROM tools, users_tools "
+                        + "WHERE users_tools.userId=? AND users_tools.toolId=tools.id" );
+                stmt.setInt( 1, id );
+                rs = stmt.executeQuery();
+                while(rs.next()) {
+                    Tool tool = new Tool();
+                    tool.setId( rs.getInt( 1 ) );
+                    tool.setName( rs.getString( 2 ) );
+                    user.getTools().add( tool );
+                }
+                rs.close();
+                stmt.close();
 
-            stmt = conn.prepareStatement( "SELECT tools.id, tools.name FROM tools, users_tools "
-                    + "WHERE users_tools.userId=? AND users_tools.toolId=tools.id" );
-            stmt.setInt( 1, id );
-            rs = stmt.executeQuery();
-            while(rs.next()) {
-                Tool tool = new Tool();
-                tool.setId( rs.getInt( 1 ) );
-                tool.setName( rs.getString( 2 ) );
-                user.getTools().add( tool );
+                stmt = conn.prepareStatement( "SELECT skills.id, skills.name FROM skills, users_skills "
+                        + "WHERE users_skills.userId=? AND users_skills.skillId=skills.id" );
+                stmt.setInt( 1, id );
+                rs = stmt.executeQuery();
+                while(rs.next()) {
+                    Skill skill = new Skill();
+                    skill.setId( rs.getInt( 1 ) );
+                    skill.setName( rs.getString( 2 ) );
+                    user.getSkills().add( skill );
+                }
+
+                return user;
+
             }
-            rs.close();
-            stmt.close();
-
-            stmt = conn.prepareStatement( "SELECT skills.id, skills.name FROM skills, users_skills "
-                    + "WHERE users_skills.userId=? AND users_skills.skillId=skills.id" );
-            stmt.setInt( 1, id );
-            rs = stmt.executeQuery();
-            while(rs.next()) {
-                Skill skill = new Skill();
-                skill.setId( rs.getInt( 1 ) );
-                skill.setName( rs.getString( 2 ) );
-                user.getSkills().add( skill );
-            }
-
-            return user;
         } catch (Exception e) {
             e.printStackTrace();
             return null;
@@ -233,6 +240,7 @@ public class Main {
                 conn.close();
             }
         }
+        return new User();
     }
 
     /**
@@ -268,9 +276,13 @@ public class Main {
                     + "email VARCHAR(255), phone VARCHAR(255))" );
             stmt.executeUpdate();
             stmt.close();
+
+
             stmt = conn.prepareStatement( "CREATE TABLE Tools(id INT PRIMARY KEY, name VARCHAR(255))" );
             stmt.executeUpdate();
             stmt.close();
+
+
             stmt = conn.prepareStatement( "CREATE TABLE Skills(id INT PRIMARY KEY, name VARCHAR(255))" );
             stmt.executeUpdate();
             stmt.close();
