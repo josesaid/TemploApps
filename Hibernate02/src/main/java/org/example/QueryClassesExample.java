@@ -18,12 +18,12 @@ public class QueryClassesExample {
         SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
         Session session = sessionFactory.getCurrentSession();
 
-        //HQL example - Get All Employees
+        //HQL example - Get All USERS
         Transaction tx = session.beginTransaction();
         Query query = session.createQuery("from User", User.class);
         List<User> userList = query.list();
         for(User user : userList){
-            System.out.println("List of USERS::"+user.getId() + "," + user.getName() );
+            System.out.println("List of USERS::" + user.getId() + "," + user.getName() );
         }
 
 

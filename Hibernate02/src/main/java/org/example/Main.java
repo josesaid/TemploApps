@@ -6,7 +6,4 @@ public class Main {
         new QueryClassesExample().queryDemo01();
     }
 
-
-
-
 }
