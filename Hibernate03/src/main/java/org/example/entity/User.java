@@ -2,6 +2,7 @@ package org.example.entity;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import javax.persistence.*;
@@ -50,5 +51,14 @@ public class User implements Serializable {
 
 	@Embedded
 	public UserAddress userAddress;
+
+	@PostLoad
+	public void postLoad (){
+		System.out.println("Antes de cargar la información hacemos algo...");
+		if (userAddress==null)
+			throw new NullPointerException("userAddress es NULO");
+		else
+			System.out.println("User actual: " + this );
+	}
 
 }

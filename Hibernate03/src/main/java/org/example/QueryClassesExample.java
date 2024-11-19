@@ -47,7 +47,7 @@ public class QueryClassesExample {
         tx.rollback();
 
         //closing hibernate resources
-        sessionFactory.close();
+        //sessionFactory.close();
 
     }
 
