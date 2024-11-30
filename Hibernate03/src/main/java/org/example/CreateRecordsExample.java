@@ -147,7 +147,7 @@ public class CreateRecordsExample {
                 int rating = rs.getInt(5);
                 user.setRating(new RatingAttributeConverter().convertToEntityAttribute(rating));
 
-                user.setImportantValue(user.getImportantValue()==null?"NULO_in_DB":user.getImportantValue());
+                user.setImportantValue(user.getImportantValue()==null?"TBD":user.getImportantValue());
 
                 rs.close();
                 stmt.close();

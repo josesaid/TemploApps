@@ -23,7 +23,7 @@ public class QueryClassesExample {
         Query query = session.createQuery("from User", User.class);
         List<User> userList = query.list();
         for(User user : userList){
-            System.out.println("List of USERS::" + user);
+            System.out.println("List of USERS::" + user.toString());
         }
 
 

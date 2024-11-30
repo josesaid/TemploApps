@@ -54,7 +54,7 @@ public class User implements Serializable {
 
 	@PostLoad
 	public void postLoad (){
-		System.out.println("Antes de cargar la información hacemos algo...");
+		System.out.println("Despues de cargar la información hacemos algo...");
 		if (userAddress==null)
 			throw new NullPointerException("userAddress es NULO");
 		else
