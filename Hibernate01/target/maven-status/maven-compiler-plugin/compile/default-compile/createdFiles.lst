@@ -1,0 +1,9 @@
+org/example/entity/ServiceEvent.class
+org/example/Main.class
+org/example/entity/Project.class
+org/example/entity/Skill.class
+org/example/entity/Tool.class
+org/example/entity/Donation.class
+org/example/entity/Community.class
+org/example/entity/Comment.class
+org/example/entity/User.class

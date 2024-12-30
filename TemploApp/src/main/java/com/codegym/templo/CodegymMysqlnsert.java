@@ -6,14 +6,14 @@ public class CodegymMysqlnsert {
 
     public User[] createTwoUsers(){
         User antonio = new User();
-        antonio.setId(2);
+        //antonio.setId(2);
         antonio.setFirstName("Antonio");
         antonio.setLastName("Xilcahua");
         antonio.setAddress("Calle imaginaria bajo las coloridas nieves de la ciudad de Oaxaca");
         antonio.setCity("Oaxaca, Oaxaca");
 
         User jessica = new User();
-        jessica.setId(3);
+        //jessica.setId(3);
         jessica.setFirstName("Jessica");
         jessica.setLastName("Alvarado");
         jessica.setAddress("Calle de las flores");
