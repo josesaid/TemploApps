@@ -1,0 +1,15 @@
+com/mx/josesaid/cassandra/batch/repository/ProductRepository.class
+com/mx/josesaid/cassandra/batch/repository/KeyspaceRepository.class
+com/mx/josesaid/cassandra/java/client/CassandraClient.class
+com/mx/josesaid/cassandra/java/client/repository/BookRepository.class
+com/mx/josesaid/datastax/cassandra/repository/KeyspaceRepository.class
+com/mx/josesaid/cassandra/java/client/domain/Book.class
+com/mx/josesaid/cassandra/batch/Application.class
+com/mx/josesaid/cassandra/batch/CassandraConnector.class
+com/mx/josesaid/datastax/cassandra/CassandraConnector.class
+com/mx/josesaid/cassandra/batch/domain/Product.class
+com/mx/josesaid/cassandra/java/client/repository/KeyspaceRepository.class
+com/mx/josesaid/datastax/cassandra/domain/Video.class
+com/mx/josesaid/datastax/cassandra/repository/VideoRepository.class
+com/mx/josesaid/datastax/cassandra/Application.class
+com/mx/josesaid/cassandra/java/client/CassandraConnector.class

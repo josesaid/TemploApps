@@ -54,7 +54,7 @@ public class ProductRepositoryLiveTest {
         productRepository.deleteTable(KEYSPACE_NAME);
         productRepository.createProductTable(KEYSPACE_NAME);
 
-        String PRODUCT = "product";
+        final String PRODUCT = "product";
         ResultSet result = session.execute("SELECT * FROM " + KEYSPACE_NAME + "." + PRODUCT + ";");
 
         List<ColumnDefinition> colDef = new ArrayList<>();

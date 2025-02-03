@@ -1,0 +1,3 @@
+com/mx/josesaid/cassandra/java/client/repository/KeyspaceRepositoryLiveTest.class
+com/mx/josesaid/cassandra/java/client/repository/BookRepositoryLiveTest.class
+com/mx/josesaid/cassandra/batch/epository/ProductRepositoryLiveTest.class

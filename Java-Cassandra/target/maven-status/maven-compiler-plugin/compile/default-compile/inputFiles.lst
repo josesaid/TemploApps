@@ -1,0 +1,15 @@
+/Users/josesaidolanogarcia/REPOSITORIOS/TemploApps/Java-Cassandra/src/main/java/com/mx/josesaid/cassandra/batch/Application.java
+/Users/josesaidolanogarcia/REPOSITORIOS/TemploApps/Java-Cassandra/src/main/java/com/mx/josesaid/cassandra/batch/CassandraConnector.java
+/Users/josesaidolanogarcia/REPOSITORIOS/TemploApps/Java-Cassandra/src/main/java/com/mx/josesaid/cassandra/batch/domain/Product.java
+/Users/josesaidolanogarcia/REPOSITORIOS/TemploApps/Java-Cassandra/src/main/java/com/mx/josesaid/cassandra/batch/repository/KeyspaceRepository.java
+/Users/josesaidolanogarcia/REPOSITORIOS/TemploApps/Java-Cassandra/src/main/java/com/mx/josesaid/cassandra/batch/repository/ProductRepository.java
+/Users/josesaidolanogarcia/REPOSITORIOS/TemploApps/Java-Cassandra/src/main/java/com/mx/josesaid/cassandra/java/client/CassandraClient.java
+/Users/josesaidolanogarcia/REPOSITORIOS/TemploApps/Java-Cassandra/src/main/java/com/mx/josesaid/cassandra/java/client/CassandraConnector.java
+/Users/josesaidolanogarcia/REPOSITORIOS/TemploApps/Java-Cassandra/src/main/java/com/mx/josesaid/cassandra/java/client/domain/Book.java
+/Users/josesaidolanogarcia/REPOSITORIOS/TemploApps/Java-Cassandra/src/main/java/com/mx/josesaid/cassandra/java/client/repository/BookRepository.java
+/Users/josesaidolanogarcia/REPOSITORIOS/TemploApps/Java-Cassandra/src/main/java/com/mx/josesaid/cassandra/java/client/repository/KeyspaceRepository.java
+/Users/josesaidolanogarcia/REPOSITORIOS/TemploApps/Java-Cassandra/src/main/java/com/mx/josesaid/datastax/cassandra/Application.java
+/Users/josesaidolanogarcia/REPOSITORIOS/TemploApps/Java-Cassandra/src/main/java/com/mx/josesaid/datastax/cassandra/CassandraConnector.java
+/Users/josesaidolanogarcia/REPOSITORIOS/TemploApps/Java-Cassandra/src/main/java/com/mx/josesaid/datastax/cassandra/domain/Video.java
+/Users/josesaidolanogarcia/REPOSITORIOS/TemploApps/Java-Cassandra/src/main/java/com/mx/josesaid/datastax/cassandra/repository/KeyspaceRepository.java
+/Users/josesaidolanogarcia/REPOSITORIOS/TemploApps/Java-Cassandra/src/main/java/com/mx/josesaid/datastax/cassandra/repository/VideoRepository.java
