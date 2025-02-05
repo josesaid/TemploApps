@@ -17,7 +17,7 @@ public class Config {
 
     @Bean
     public Transmission transmission() {
-        return new Transmission("automatica");
+        return new Transmission("Automática");
     }
 
 }

@@ -12,6 +12,6 @@ public class Engine {
 
     @Override
     public String toString() {
-        return String.format("%s %d", type, volume);
+        return String.format("%s >> %d", type, volume);
     }
 }

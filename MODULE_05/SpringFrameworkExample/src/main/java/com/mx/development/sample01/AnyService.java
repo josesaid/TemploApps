@@ -7,8 +7,9 @@ import org.springframework.stereotype.Component;
 public class AnyService {
 
     @Autowired
-    @FormatterType("Foo")
+    @FormatterType("Bar")
     private Formatter formatter;
+    //Formatter bar = new BarFormatter();
 
     public String doSomething() {
         return formatter.format();

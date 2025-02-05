@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 public class BarFormatter implements Formatter {
 
     public String format() {
-        return "------";
+        return "Bar";
     }
 
 }

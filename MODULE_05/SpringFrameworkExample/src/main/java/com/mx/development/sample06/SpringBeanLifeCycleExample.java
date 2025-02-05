@@ -5,7 +5,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class SpringBeanLifeCycleExample {
     public static void main(String[] args) {
-        AbstractApplicationContext context = new ClassPathXmlApplicationContext("SpringBe   anLifeCycle.xml");
+        AbstractApplicationContext context = new ClassPathXmlApplicationContext("SpringBeanLifeCycle.xml");
 
         HelloWorld obj = (HelloWorld) context.getBean("aBean");
         obj.getMessage();
