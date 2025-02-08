@@ -6,10 +6,10 @@ import lombok.Data;
 public class HelloWorld {
     private String message;
 
-    public void init(){
-        System.out.println("Bean is going through init.");
+    public void inicio(){
+        System.out.println("Cargando al bean en el contexto");
     }
-    public void destroy() {
-        System.out.println("Bean will destroy now.");
+    public void fin() {
+        System.out.println("Destruyendo al bean en el contexto");
     }
 }

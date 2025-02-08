@@ -7,8 +7,8 @@ public class SpringBeanLifeCycleExample {
     public static void main(String[] args) {
         AbstractApplicationContext context = new ClassPathXmlApplicationContext("SpringBeanLifeCycle.xml");
 
-        HelloWorld obj = (HelloWorld) context.getBean("aBean");
-        obj.getMessage();
+        HelloWorld obj = (HelloWorld) context.getBean("MiHermosoBean");
+        System.out.println(obj.getMessage());
         context.registerShutdownHook();
     }
 }

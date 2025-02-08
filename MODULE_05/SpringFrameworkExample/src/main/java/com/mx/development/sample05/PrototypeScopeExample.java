@@ -8,10 +8,13 @@ public class PrototypeScopeExample {
         ApplicationContext context = new ClassPathXmlApplicationContext("AwesomeBeans.xml");
         HelloWorld objA = (HelloWorld) context.getBean("prototypeHelloWorld");
         objA.setMessage("I'm object A");
-
         System.out.println(objA.getMessage());
 
+
+
         HelloWorld objB = (HelloWorld) context.getBean("prototypeHelloWorld");
+        objB.setMessage("I'm object B");
         System.out.println(objB.getMessage());
+        System.out.println(objA.getMessage());
     }
 }

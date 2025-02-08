@@ -12,6 +12,8 @@ public class SingletonScopeExample {
         System.out.println(objA.getMessage());
 
         HelloWorld objB = (HelloWorld) context.getBean("singletonHelloWorld");
+        objB.setMessage("I'm object B");
         System.out.println(objB.getMessage());
+        System.out.println(objA.getMessage());
     }
 }

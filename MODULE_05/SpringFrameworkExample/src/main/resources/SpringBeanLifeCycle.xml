@@ -5,10 +5,10 @@
        xsi:schemaLocation = "http://www.springframework.org/schema/beans
    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-    <bean id = "aBean" class = "com.mx.development.sample06.HelloWorld"
-          init-method       = "init"
-          destroy-method    = "destroy">
-        <property name = "message" value = "I am learning surprisingly Spring Framework!!!"/>
+    <bean id = "MiHermosoBean" class = "com.mx.development.sample06.HelloWorld"
+          init-method       = "inicio"
+          destroy-method    = "fin">
+        <property name = "message" value = "Hola Mundo...."/>
     </bean>
 
 </beans>
