@@ -1,0 +1,16 @@
+/Users/josesaidolanogarcia/REPOSITORIOS/TemploApps/MODULE_05/spring-aop-2/src/test/java/com/baeldung/SpringContextTest.java
+/Users/josesaidolanogarcia/REPOSITORIOS/TemploApps/MODULE_05/spring-aop-2/src/test/java/com/baeldung/aspectj/classmethodadvice/MyTracedServiceConsumerUnitTest.java
+/Users/josesaidolanogarcia/REPOSITORIOS/TemploApps/MODULE_05/spring-aop-2/src/test/java/com/baeldung/aspectj/classmethodadvice/MyTracedServiceUnitTest.java
+/Users/josesaidolanogarcia/REPOSITORIOS/TemploApps/MODULE_05/spring-aop-2/src/test/java/com/baeldung/joinpoint/ArticleServiceIntegrationTest.java
+/Users/josesaidolanogarcia/REPOSITORIOS/TemploApps/MODULE_05/spring-aop-2/src/test/java/com/baeldung/joinpoint/JoinPointAfterThrowingAspectIntegrationTest.java
+/Users/josesaidolanogarcia/REPOSITORIOS/TemploApps/MODULE_05/spring-aop-2/src/test/java/com/baeldung/joinpoint/JoinPointAroundCacheAspectIntegrationTest.java
+/Users/josesaidolanogarcia/REPOSITORIOS/TemploApps/MODULE_05/spring-aop-2/src/test/java/com/baeldung/joinpoint/JoinPointAroundExceptionAspectIntegrationTest.java
+/Users/josesaidolanogarcia/REPOSITORIOS/TemploApps/MODULE_05/spring-aop-2/src/test/java/com/baeldung/joinpoint/JoinPointBeforeAspectIntegrationTest.java
+/Users/josesaidolanogarcia/REPOSITORIOS/TemploApps/MODULE_05/spring-aop-2/src/test/java/com/baeldung/method/info/BankAccountServiceIntegrationTest.java
+/Users/josesaidolanogarcia/REPOSITORIOS/TemploApps/MODULE_05/spring-aop-2/src/test/java/com/baeldung/selfinvocation/CompileTimeWeavingIntegrationTest.java
+/Users/josesaidolanogarcia/REPOSITORIOS/TemploApps/MODULE_05/spring-aop-2/src/test/java/com/baeldung/selfinvocation/LoadTimeWeavingIntegrationTest.java
+/Users/josesaidolanogarcia/REPOSITORIOS/TemploApps/MODULE_05/spring-aop-2/src/test/java/com/baeldung/selfinvocation/MathServiceIntegrationTest.java
+/Users/josesaidolanogarcia/REPOSITORIOS/TemploApps/MODULE_05/spring-aop-2/src/test/java/com/baeldung/springaop/unittest/ExecutionTimeAspectIntegrationTest.java
+/Users/josesaidolanogarcia/REPOSITORIOS/TemploApps/MODULE_05/spring-aop-2/src/test/java/com/baeldung/springaop/unittest/ExecutionTimeAspectUnitTest.java
+/Users/josesaidolanogarcia/REPOSITORIOS/TemploApps/MODULE_05/spring-aop-2/src/test/java/com/baeldung/undeclared/UndeclaredThrowableExceptionIntegrationTest.java
+/Users/josesaidolanogarcia/REPOSITORIOS/TemploApps/MODULE_05/spring-aop-2/src/test/java/com/baeldung/undeclared/UndeclaredThrowableExceptionUnitTest.java
