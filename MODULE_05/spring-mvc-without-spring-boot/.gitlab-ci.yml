@@ -1,0 +1,78 @@
+default:
+  image: amazoncorretto:17.0.8@sha256:d9c37d3afdf2026d63c11a7f801529a394e8bcd46bf7eed522024fab34cd6161
+  before_script:
+    - ': before_script'
+    - chmod +x mvnw
+    - export MAVEN_OPTS="-Dmaven.repo.local=${CI_PROJECT_DIR}/.m2/"
+
+# Static Application Security Testing (SAST) is a frequently used Application Security (AppSec) tool,
+# which scans an application’s source, binary, or byte code.
+# https://www.microfocus.com/en-us/what-is/sast
+include:
+  - template: Security/SAST.gitlab-ci.yml
+
+variables:
+  SONAR_USER_HOME: "${CI_PROJECT_DIR}/.sonar"  # Defines the location of the analysis task cache
+  GIT_DEPTH: "0"  # Tells git to fetch all the branches of the project, required by the analysis task
+  SAST_JAVA_VERSION: "17" # Required by SAST scanning
+
+cache:
+  key: maven-cache
+  paths:
+    - $CI_PROJECT_DIR/.m2/
+
+stages:
+  - test
+  - build
+  - deploy
+
+build:
+  stage: build
+  script:
+    - ./mvnw clean install -DskipTests $MAVEN_OPTS
+  artifacts:
+    paths:
+      - target/*.war
+    expire_in: 1 hour
+
+test:
+  stage: test
+  script:
+    - ./mvnw verify $MAVEN_OPTS
+    - cat target/site/jacoco/index.html | grep -o '<tfoot>.*</tfoot>'
+  coverage: '/Total.*?([0-9]{1,3})%/'
+  artifacts:
+    paths:
+      - target/site/jacoco/*
+    reports:
+      junit:
+        - "**/target/surefire-reports/TEST-*.xml"
+        - "**/target/failsafe-reports/TEST-*.xml"
+    expire_in: 1 hour
+
+sonarcloud-check:
+  needs:
+    - job: test
+  cache:
+    key: "${CI_JOB_NAME}"
+    paths:
+      - .sonar/cache
+  script:
+    - ./mvnw verify sonar:sonar -Dsonar.projectKey=ShowMeYourCodeYouTube_spring-mvc-without-spring-boot
+  only:
+    - main
+
+pages:
+  stage: deploy
+  script:
+    - echo 'Cleaning old pages'
+    - rm -rf public
+    - ls -la
+    - mkdir -p public/test-report && cp -r target/site/jacoco/* public/test-report
+    - echo 'Public directory content after copying files'
+    - ls -la ./public
+  artifacts:
+    paths:
+      - public
+  only:
+    - main

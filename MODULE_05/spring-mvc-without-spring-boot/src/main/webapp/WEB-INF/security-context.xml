@@ -1,0 +1,48 @@
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+             xmlns:beans="http://www.springframework.org/schema/beans"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:security="http://www.springframework.org/schema/security"
+             xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+    http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-6.0.xsd">
+
+    <security:http auto-config="true">
+        <intercept-url pattern="/" access="permitAll" />
+        <intercept-url pattern="/login" method="GET" access="permitAll"/>
+        <intercept-url pattern="/user/logout" method="GET" access="permitAll"/>
+        <intercept-url pattern="/account/**" access="permitAll"/>
+        <intercept-url pattern="/resources/css/*.css*" access="permitAll"/>
+        <intercept-url pattern="/resources/images/categories/*" access="permitAll"/>
+        <intercept-url pattern="/resources/images/events/*" access="permitAll"/>
+        <intercept-url pattern="/resources/fonts/*" access="permitAll"/>
+        <intercept-url pattern="/resources/images/*" access="permitAll"/>
+        <intercept-url pattern="/resources/js/*.js" access="permitAll"/>
+        <intercept-url pattern="/api/v1/categories" method="GET" access="permitAll"/>
+        <intercept-url pattern="/api/v1/events" method="GET" access="permitAll"/>
+        <intercept-url pattern="/user/**" access="hasAnyRole('ROLE_USER', 'ROLE_ADMIN')" />
+        <intercept-url pattern="/j_spring_security_check" access="permitAll"/>
+        <access-denied-handler error-page="/" />
+
+        <form-login
+                authentication-failure-url="/account/login"
+                username-parameter="userSignIn.login"
+                password-parameter="userSignIn.passwordLogin"
+                login-processing-url="/j_spring_security_check"
+                default-target-url="/account/success"
+                login-page="/account/login"
+                 />
+        <logout logout-success-url="/"
+                logout-url="/user/logout"/>
+
+        <!--disable csrf protection   <csrf/>-->
+        <security:csrf disabled="true" />
+
+        <security:headers>
+            <security:frame-options policy="SAMEORIGIN"/>
+        </security:headers>
+    </security:http>
+
+    <authentication-manager>
+         <authentication-provider user-service-ref="defaultUserDetailsService">
+         </authentication-provider>
+     </authentication-manager>
+</beans:beans>
