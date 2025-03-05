@@ -1,0 +1,14 @@
+com/baeldung/pointcutadvice/AopPublishingIntegrationTest.class
+com/baeldung/pointcutadvice/AopXmlConfigPerformanceIntegrationTest$1.class
+com/baeldung/pointcutadvice/AopPerformanceIntegrationTest$1.class
+com/baeldung/pointcutadvice/AopPublishingIntegrationTest$1.class
+com/baeldung/pointcutadvice/AopPerformanceIntegrationTest.class
+com/baeldung/SpringContextTest.class
+com/baeldung/pointcutadvice/AopLoggingIntegrationTest.class
+com/baeldung/pointcutadvice/AopXmlConfigPerformanceIntegrationTest.class
+com/baeldung/pointcutadvice/AopLoggingIntegrationTest$1.class
+com/baeldung/CustomAnnotationIntegrationTest.class
+com/baeldung/aspectj/SecuredMethodUnitTest.class
+com/baeldung/logging/GreetingServiceUnitTest.class
+com/baeldung/aspectj/AccountUnitTest.class
+com/baeldung/logger/CalculatorIntegrationTest.class
