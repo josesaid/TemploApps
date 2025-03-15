@@ -1,0 +1,209 @@
+2025-03-14 20:52:07,838 INFO o.s.b.StartupInfoLogger [main] Starting EmployeeRestControllerIntegrationTest using Java 23.0.2 with PID 55053 (started by josesaidolanogarcia in /Users/josesaidolanogarcia/REPOSITORIOS/tutorials/spring-boot-modules/spring-boot-simple)
+2025-03-14 20:52:07,841 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.3.2, Spring v6.1.11
+2025-03-14 20:52:07,842 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-03-14 20:52:07,842 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2025-03-14 20:52:08,214 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-14 20:52:08,263 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interface.
+2025-03-14 20:52:08,487 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-14 20:52:08,513 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.5.2.Final
+2025-03-14 20:52:08,527 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2025-03-14 20:52:08,574 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-14 20:52:08,587 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2025-03-14 20:52:08,654 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:test user=SA
+2025-03-14 20:52:08,655 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2025-03-14 20:52:08,667 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-14 20:52:08,966 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-14 20:52:08,981 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-14 20:52:09,149 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-14 20:52:09,164 WARN o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: 0dafca20-b0c5-466c-be19-d8234907a2dc
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-14 20:52:09,178 INFO o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [main] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-03-14 20:52:09,423 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 15 endpoints beneath base path '/actuator'
+2025-03-14 20:52:09,663 INFO o.s.m.w.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2025-03-14 20:52:09,663 INFO o.s.w.s.FrameworkServlet [main] Initializing Servlet ''
+2025-03-14 20:52:09,663 INFO o.s.w.s.FrameworkServlet [main] Completed initialization in 0 ms
+2025-03-14 20:52:09,734 INFO o.s.b.StartupInfoLogger [main] Started EmployeeRestControllerIntegrationTest in 2.005 seconds (process running for 3.26)
+2025-03-14 20:52:09,896 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.baeldung.boot.testing.EmployeeRepositoryIntegrationTest]: EmployeeRepositoryIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-03-14 20:52:09,901 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.baeldung.boot.testing.Application for test class com.baeldung.boot.testing.EmployeeRepositoryIntegrationTest
+2025-03-14 20:52:09,909 INFO o.s.b.StartupInfoLogger [main] Starting EmployeeRepositoryIntegrationTest using Java 23.0.2 with PID 55053 (started by josesaidolanogarcia in /Users/josesaidolanogarcia/REPOSITORIOS/tutorials/spring-boot-modules/spring-boot-simple)
+2025-03-14 20:52:09,909 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.3.2, Spring v6.1.11
+2025-03-14 20:52:09,909 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-03-14 20:52:09,928 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-14 20:52:09,930 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2025-03-14 20:52:09,933 INFO o.s.b.t.a.j.TestDatabaseAutoConfiguration$EmbeddedDataSourceBeanFactoryPostProcessor [main] Replacing 'dataSource' DataSource bean with embedded version
+2025-03-14 20:52:09,940 INFO o.s.j.d.e.EmbeddedDatabaseFactory [main] Starting embedded database: url='jdbc:h2:mem:d4e2293c-3c6f-447a-919b-ce631ce4261b;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2025-03-14 20:52:09,946 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-14 20:52:09,947 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2025-03-14 20:52:09,949 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-14 20:52:09,972 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-14 20:52:09,973 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-14 20:52:09,985 INFO o.s.b.StartupInfoLogger [main] Started EmployeeRepositoryIntegrationTest in 0.083 seconds (process running for 3.51)
+2025-03-14 20:52:10,013 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.baeldung.boot.testing.EmployeeControllerIntegrationTest]: EmployeeControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-03-14 20:52:10,016 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.baeldung.boot.testing.Application for test class com.baeldung.boot.testing.EmployeeControllerIntegrationTest
+2025-03-14 20:52:10,022 INFO o.s.b.StartupInfoLogger [main] Starting EmployeeControllerIntegrationTest using Java 23.0.2 with PID 55053 (started by josesaidolanogarcia in /Users/josesaidolanogarcia/REPOSITORIOS/tutorials/spring-boot-modules/spring-boot-simple)
+2025-03-14 20:52:10,022 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.3.2, Spring v6.1.11
+2025-03-14 20:52:10,022 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-03-14 20:52:10,087 INFO o.s.m.w.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2025-03-14 20:52:10,087 INFO o.s.w.s.FrameworkServlet [main] Initializing Servlet ''
+2025-03-14 20:52:10,087 INFO o.s.w.s.FrameworkServlet [main] Completed initialization in 0 ms
+2025-03-14 20:52:10,089 INFO o.s.b.StartupInfoLogger [main] Started EmployeeControllerIntegrationTest in 0.073 seconds (process running for 3.614)
+2025-03-14 20:52:10,112 INFO o.s.b.StartupInfoLogger [main] Starting SpringContextTest using Java 23.0.2 with PID 55053 (started by josesaidolanogarcia in /Users/josesaidolanogarcia/REPOSITORIOS/tutorials/spring-boot-modules/spring-boot-simple)
+2025-03-14 20:52:10,112 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.3.2, Spring v6.1.11
+2025-03-14 20:52:10,112 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-03-14 20:52:10,155 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-14 20:52:10,156 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 1 ms. Found 1 JPA repository interface.
+2025-03-14 20:52:10,222 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-14 20:52:10,223 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2025-03-14 20:52:10,226 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-14 20:52:10,226 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Starting...
+2025-03-14 20:52:10,227 INFO c.z.h.p.HikariPool [main] HikariPool-2 - Added connection conn19: url=jdbc:h2:mem:6502f087-6b79-4c75-833a-36ce540450c0 user=SA
+2025-03-14 20:52:10,227 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Start completed.
+2025-03-14 20:52:10,242 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-14 20:52:10,244 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-14 20:52:10,278 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-14 20:52:10,285 WARN o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: 0e8f228f-5540-458d-90a9-a1e0ff6918d6
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-14 20:52:10,286 INFO o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [main] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-03-14 20:52:10,356 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 15 endpoints beneath base path '/actuator'
+2025-03-14 20:52:10,443 INFO o.s.b.StartupInfoLogger [main] Started SpringContextTest in 0.336 seconds (process running for 3.968)
+2025-03-14 20:52:10,810 INFO o.s.b.StartupInfoLogger [main] Starting SpringBootApplicationIntegrationTest using Java 23.0.2 with PID 55053 (started by josesaidolanogarcia in /Users/josesaidolanogarcia/REPOSITORIOS/tutorials/spring-boot-modules/spring-boot-simple)
+2025-03-14 20:52:10,810 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.3.2, Spring v6.1.11
+2025-03-14 20:52:10,810 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-03-14 20:52:10,875 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-14 20:52:10,877 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 1 ms. Found 1 JPA repository interface.
+2025-03-14 20:52:10,904 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-14 20:52:10,904 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2025-03-14 20:52:10,907 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-14 20:52:10,907 INFO c.z.h.HikariDataSource [main] HikariPool-3 - Starting...
+2025-03-14 20:52:10,908 INFO c.z.h.p.HikariPool [main] HikariPool-3 - Added connection conn29: url=jdbc:h2:mem:85b4dca4-74d4-46f3-af4e-88ed6a1c0266 user=SA
+2025-03-14 20:52:10,908 INFO c.z.h.HikariDataSource [main] HikariPool-3 - Start completed.
+2025-03-14 20:52:10,919 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-14 20:52:10,920 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-14 20:52:10,949 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-14 20:52:11,038 WARN o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: 6b49d850-ccc9-4d28-ae7b-e0c1e0f82a09
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-14 20:52:11,039 INFO o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [main] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-03-14 20:52:11,049 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 15 endpoints beneath base path '/actuator'
+2025-03-14 20:52:11,084 INFO o.s.b.StartupInfoLogger [main] Started SpringBootApplicationIntegrationTest in 0.281 seconds (process running for 4.61)
+2025-03-14 20:52:11,088 INFO o.s.m.w.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2025-03-14 20:52:11,088 INFO o.s.w.s.FrameworkServlet [main] Initializing Servlet ''
+2025-03-14 20:52:11,088 INFO o.s.w.s.FrameworkServlet [main] Completed initialization in 0 ms
+2025-03-14 20:52:11,092 INFO o.s.m.w.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2025-03-14 20:52:11,092 INFO o.s.w.s.FrameworkServlet [main] Initializing Servlet ''
+2025-03-14 20:52:11,092 INFO o.s.w.s.FrameworkServlet [main] Completed initialization in 0 ms
+2025-03-14 20:52:11,103 INFO o.s.b.StartupInfoLogger [main] Starting ActuatorInfoIntegrationTest using Java 23.0.2 with PID 55053 (started by josesaidolanogarcia in /Users/josesaidolanogarcia/REPOSITORIOS/tutorials/spring-boot-modules/spring-boot-simple)
+2025-03-14 20:52:11,103 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.3.2, Spring v6.1.11
+2025-03-14 20:52:11,104 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-03-14 20:52:11,169 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-14 20:52:11,170 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2025-03-14 20:52:11,243 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 0 (http)
+2025-03-14 20:52:11,249 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-auto-1"]
+2025-03-14 20:52:11,250 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2025-03-14 20:52:11,250 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.26]
+2025-03-14 20:52:11,272 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-03-14 20:52:11,272 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 168 ms
+2025-03-14 20:52:11,310 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-14 20:52:11,310 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2025-03-14 20:52:11,313 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-14 20:52:11,313 INFO c.z.h.HikariDataSource [main] HikariPool-4 - Starting...
+2025-03-14 20:52:11,314 INFO c.z.h.p.HikariPool [main] HikariPool-4 - Added connection conn39: url=jdbc:h2:mem:c8c27eed-b6e2-40ea-afed-e716a6ae3729 user=SA
+2025-03-14 20:52:11,314 INFO c.z.h.HikariDataSource [main] HikariPool-4 - Start completed.
+2025-03-14 20:52:11,319 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-14 20:52:11,319 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-14 20:52:11,341 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-14 20:52:11,411 WARN o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: c0768578-48c9-4961-bb54-2fe37b7fdd5f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-14 20:52:11,411 INFO o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [main] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-03-14 20:52:11,417 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 16 endpoints beneath base path '/actuator'
+2025-03-14 20:52:11,454 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-auto-1"]
+2025-03-14 20:52:11,463 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 62436 (http) with context path '/'
+2025-03-14 20:52:11,466 INFO o.s.b.StartupInfoLogger [main] Started ActuatorInfoIntegrationTest in 0.369 seconds (process running for 4.991)
+2025-03-14 20:52:11,541 INFO o.a.j.l.DirectJDKLog [http-nio-auto-1-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-14 20:52:11,541 INFO o.s.w.s.FrameworkServlet [http-nio-auto-1-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-03-14 20:52:11,541 INFO o.s.w.s.FrameworkServlet [http-nio-auto-1-exec-1] Completed initialization in 0 ms
+2025-03-14 20:52:11,576 INFO o.s.b.StartupInfoLogger [main] Starting PropertiesConversionIntegrationTest using Java 23.0.2 with PID 55053 (started by josesaidolanogarcia in /Users/josesaidolanogarcia/REPOSITORIOS/tutorials/spring-boot-modules/spring-boot-simple)
+2025-03-14 20:52:11,576 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.3.2, Spring v6.1.11
+2025-03-14 20:52:11,576 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-03-14 20:52:11,644 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-14 20:52:11,645 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2025-03-14 20:52:11,685 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-14 20:52:11,686 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2025-03-14 20:52:11,689 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-14 20:52:11,689 INFO c.z.h.HikariDataSource [main] HikariPool-5 - Starting...
+2025-03-14 20:52:11,691 INFO c.z.h.p.HikariPool [main] HikariPool-5 - Added connection conn49: url=jdbc:h2:mem:8b67ee87-3e27-4908-8407-118d8d6a578d user=SA
+2025-03-14 20:52:11,691 INFO c.z.h.HikariDataSource [main] HikariPool-5 - Start completed.
+2025-03-14 20:52:11,697 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-14 20:52:11,697 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-14 20:52:11,778 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-14 20:52:11,868 WARN o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: 131e5a84-b120-467b-ba71-391ae47858bc
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-14 20:52:11,868 INFO o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [main] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-03-14 20:52:11,874 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 15 endpoints beneath base path '/actuator'
+2025-03-14 20:52:11,911 INFO o.s.b.StartupInfoLogger [main] Started PropertiesConversionIntegrationTest in 0.34 seconds (process running for 5.436)
+2025-03-14 20:52:11,924 INFO o.s.b.StartupInfoLogger [main] Starting SpringBootJPAIntegrationTest using Java 23.0.2 with PID 55053 (started by josesaidolanogarcia in /Users/josesaidolanogarcia/REPOSITORIOS/tutorials/spring-boot-modules/spring-boot-simple)
+2025-03-14 20:52:11,924 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.3.2, Spring v6.1.11
+2025-03-14 20:52:11,924 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-03-14 20:52:11,978 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-14 20:52:11,980 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2025-03-14 20:52:12,004 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-14 20:52:12,004 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2025-03-14 20:52:12,006 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-14 20:52:12,007 INFO c.z.h.HikariDataSource [main] HikariPool-6 - Starting...
+2025-03-14 20:52:12,008 INFO c.z.h.p.HikariPool [main] HikariPool-6 - Added connection conn57: url=jdbc:h2:mem:2233834c-fe68-499c-b09e-691bfd03e4e2 user=SA
+2025-03-14 20:52:12,008 INFO c.z.h.HikariDataSource [main] HikariPool-6 - Start completed.
+2025-03-14 20:52:12,017 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-14 20:52:12,018 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-14 20:52:12,049 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-14 20:52:12,122 WARN o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: fdb5efcf-ff04-4877-8ede-6ef2a5d1d73d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-14 20:52:12,122 INFO o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [main] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-03-14 20:52:12,127 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 15 endpoints beneath base path '/actuator'
+2025-03-14 20:52:12,154 INFO o.s.b.StartupInfoLogger [main] Started SpringBootJPAIntegrationTest in 0.235 seconds (process running for 5.679)
+2025-03-14 20:52:12,169 INFO o.s.s.s.SMTPServer [main] SMTP server *:8025 starting
+2025-03-14 20:52:12,170 INFO o.s.s.i.s.ServerThread [org.subethamail.smtp.internal.server.ServerThread *:8025] SMTP server *:8025 started
+2025-03-14 20:52:12,201 INFO o.s.s.s.SMTPServer [main] SMTP server *:8025 stopping...
+2025-03-14 20:52:12,202 INFO o.s.s.i.s.ServerThread [org.subethamail.smtp.internal.server.ServerThread *:8025] SMTP server *:8025 stopped accepting connections
+2025-03-14 20:52:12,202 INFO o.s.s.s.SMTPServer [main] SMTP server *:8025 stopped
+2025-03-14 20:52:12,212 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-14 20:52:12,214 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-03-14 20:52:12,215 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2025-03-14 20:52:12,216 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-14 20:52:12,218 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-14 20:52:12,218 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown initiated...
+2025-03-14 20:52:12,219 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown completed.
+2025-03-14 20:52:12,220 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-14 20:52:12,221 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-3 - Shutdown initiated...
+2025-03-14 20:52:12,221 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-3 - Shutdown completed.
+2025-03-14 20:52:13,833 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-14 20:52:13,834 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-4 - Shutdown initiated...
+2025-03-14 20:52:13,835 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-4 - Shutdown completed.
+2025-03-14 20:52:13,841 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-14 20:52:13,841 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-5 - Shutdown initiated...
+2025-03-14 20:52:13,842 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-5 - Shutdown completed.
+2025-03-14 20:52:13,845 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-14 20:52:13,845 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-6 - Shutdown initiated...
+2025-03-14 20:52:13,846 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-6 - Shutdown completed.
