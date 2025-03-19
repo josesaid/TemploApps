@@ -1,0 +1,13 @@
+com/baeldung/bootstrap/SpringBootBootstrapLiveTest.class
+com/baeldung/boot/testing/EmployeeRepositoryIntegrationTest.class
+com/baeldung/starter/SpringBootApplicationIntegrationTest.class
+com/baeldung/boot/testing/EmployeeControllerIntegrationTest.class
+com/baeldung/boot/testing/EmployeeServiceImplIntegrationTest$EmployeeServiceImplTestContextConfiguration.class
+com/baeldung/configurationproperties/PropertiesConversionIntegrationTest.class
+com/baeldung/bootstrap/SpringContextTest.class
+com/baeldung/starter/TestMailConfiguration.class
+com/baeldung/boot/testing/EmployeeRestControllerIntegrationTest.class
+com/baeldung/actuator/ActuatorInfoIntegrationTest.class
+com/baeldung/starter/SpringBootJPAIntegrationTest.class
+com/baeldung/boot/testing/JsonUtil.class
+com/baeldung/boot/testing/EmployeeServiceImplIntegrationTest.class

@@ -45,7 +45,8 @@ public class EmployeeControllerIntegrationTest {
         Employee alex = new Employee("alex");
         given(service.save(Mockito.any())).willReturn(alex);
 
-        mvc.perform(post("/api/employees").contentType(MediaType.APPLICATION_JSON).content(JsonUtil.toJson(alex))).andExpect(status().isCreated()).andExpect(jsonPath("$.name", is("alex")));
+        mvc.perform(post("/api/employees").contentType(MediaType.APPLICATION_JSON).content(JsonUtil.toJson(alex)))
+                .andExpect(status().isCreated()).andExpect(jsonPath("$.name", is("alex")));
         verify(service, VerificationModeFactory.times(1)).save(Mockito.any());
         reset(service);
     }
