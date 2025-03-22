@@ -1,5 +1,7 @@
-package com.mx.development.app;
+package com.mx.development.app.controller;
 
+import com.mx.development.app.entity.ProductEntity;
+import com.mx.development.app.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

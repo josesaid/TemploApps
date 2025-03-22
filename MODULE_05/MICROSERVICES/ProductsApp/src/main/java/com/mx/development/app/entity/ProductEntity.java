@@ -1,4 +1,4 @@
-package com.mx.development.app;
+package com.mx.development.app.entity;
 
 import lombok.Data;
 

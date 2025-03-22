@@ -1,5 +1,6 @@
-package com.mx.development.app;
+package com.mx.development.app.service;
 
+import com.mx.development.app.entity.ProductEntity;
 import org.springframework.stereotype.Service;
 
 
