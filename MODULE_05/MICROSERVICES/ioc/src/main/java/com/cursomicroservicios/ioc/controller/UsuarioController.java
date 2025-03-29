@@ -14,6 +14,9 @@ import com.cursomicroservicios.ioc.entities.Order;
 import com.cursomicroservicios.ioc.entities.Usuario;
 import com.cursomicroservicios.ioc.service.UsuarioService;
 
+/**
+ * @author josesaidolanogarcia
+ */
 @RestController
 @RequestMapping("/api/usuarios")
 public class UsuarioController {
@@ -22,6 +25,14 @@ public class UsuarioController {
 
 	public UsuarioController(UsuarioService usuarioService) {
 		this.usuarioService = usuarioService;
+	}
+
+	@GetMapping("/erick2")
+	public String saludarSobrinoConSuma(){
+		int x = 10;
+		int y = 20;
+		int z = x + y;
+		return "saludando al sobrino con el resultado de la suma: " + z + "";
 	}
 
 	@GetMapping("/saludito")

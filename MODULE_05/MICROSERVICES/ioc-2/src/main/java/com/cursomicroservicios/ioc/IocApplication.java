@@ -13,11 +13,10 @@ public class IocApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(IocApplication.class, args);
-		log.info("Application started");
-		//logger
-		//CommandLineRunner
-		//Convertir la app en WAR
-		//Microservice consumiendo a otro
+		log.info("Application started by Said manually");
+		//logger - DONE!
+		//CommandLineRunner - DONE!
+		//jar to war
 	}
 
 }

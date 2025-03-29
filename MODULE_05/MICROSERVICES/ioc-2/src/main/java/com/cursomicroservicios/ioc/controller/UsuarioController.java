@@ -29,7 +29,7 @@ public class UsuarioController {
 	@GetMapping("/saludito")
 	public String saludar(){
 		log.info("saludar");
-		return "Hola Mundo 2";
+		return "Hola Mundo 5";
 	}
 
 	@DeleteMapping()
