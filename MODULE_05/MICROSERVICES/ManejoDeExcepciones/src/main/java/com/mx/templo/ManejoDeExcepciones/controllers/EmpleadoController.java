@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.time.LocalDateTime;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/empleados")
@@ -28,7 +29,7 @@ public class EmpleadoController {
         try{
             //vamos a la BD y encontramos al  empleado con el id:  + empleadoID;
             MensajeDetalle mensajeDetalle = new MensajeDetalle();
-            Empleado empleado = empleadoService.findById(empleadoId);
+            Optional<Empleado> empleado = empleadoService.findById(empleadoId);
             mensajeDetalle.setMensaje("Empleado encontrado fue: " + empleado.toString());
             mensajeDetalle.setFechaHora(LocalDateTime.now());
             mensajeDetalle.setComentario("ALGO");

@@ -28,4 +28,7 @@ public class Empleado {
     @Column
     private String email;
 
+    @Column
+    private boolean activo;
+
 }
