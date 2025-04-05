@@ -36,7 +36,7 @@
 			<artifactId>bcprov-jdk15to18</artifactId>
 			<version>1.78</version>
 		</dependency>
-
+		<!-- Argon2 -->
 
 		<dependency>
 			<groupId>org.springframework.security</groupId>
@@ -55,7 +55,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>

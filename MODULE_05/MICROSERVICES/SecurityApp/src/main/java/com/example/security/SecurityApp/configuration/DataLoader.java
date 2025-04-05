@@ -18,38 +18,42 @@ public class DataLoader {
 	@Bean
 	public CommandLineRunner datos(UserRepository userRepository, PasswordEncoder passwordEncoder) {
 		return a -> {
-			User jose = new User();
-			jose.setUsername("codegym");
-			jose.setPassword(passwordEncoder.encode("codegym"));
-			jose.setEnabled(true);
-			jose.setAuthorities(Set.of(new Authority(null, "codegym", "ROLE_ADMIN")));
-
-			User codegym = new User();
-			codegym.setUsername("codegym2");
-			codegym.setPassword(passwordEncoder.encode("codegym"));
-			codegym.setEnabled(true);
-			codegym.setAuthorities(Set.of(new Authority(null, "codegym2", "ROLE_ADMIN")));
-
-			User maria = new User();
-			maria.setUsername("maria");
-			maria.setPassword(passwordEncoder.encode("maria"));
-			maria.setEnabled(true);
-			maria.setAuthorities(Set.of(new Authority(null, "maria", "ROLE_USER")));
-			
-			User melissa = new User();
-			melissa.setUsername("juan");
-			melissa.setPassword(passwordEncoder.encode("juan"));
-			melissa.setEnabled(true);
-			melissa.setAuthorities(
-					Set.of( new Authority(null, "juan", "ROLE_ADMIN"),
-							new Authority(null, "juan", "ROLE_USER")
+			User said = new User();
+			said.setUsername("said");
+			said.setPassword(passwordEncoder.encode("said"));
+			said.setEnabled(true);
+			said.setAuthorities(
+					Set.of(
+							new Authority(null, "said", "ROLE_ADMIN"),
+							new Authority(null, "said", "ROLE_USER"),
+							new Authority(null, "said", "ROLE_CUSTOMER")
 					)
 			);
+
+			User admin = new User();
+			admin.setUsername("admin");
+			admin.setPassword(passwordEncoder.encode("admin"));
+			admin.setEnabled(true);
+			admin.setAuthorities(Set.of(new Authority(null, "admin", "ROLE_ADMIN")));
+
+			User user = new User();
+			user.setUsername("user");
+			user.setPassword(passwordEncoder.encode("user"));
+			user.setEnabled(true);
+			user.setAuthorities(Set.of(new Authority(null, "user", "ROLE_USER")));
 			
-			userRepository.save(jose);
-			userRepository.save(codegym);
-			userRepository.save(maria);
-			userRepository.save(melissa);
+			User customer = new User();
+			customer.setUsername("customer");
+			customer.setPassword(passwordEncoder.encode("customer"));
+			customer.setEnabled(true);
+			customer.setAuthorities(
+					Set.of( new Authority(null, "customer", "ROLE_CUSTOMER"))
+			);
+			
+			userRepository.save(said);
+			userRepository.save(admin);
+			userRepository.save(user);
+			userRepository.save(customer);
 			
 			System.out.print("Datos ingresados correctamente");
 		};
